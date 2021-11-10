@@ -1,0 +1,11 @@
+function cuentaMinusculas(texto) {
+    contadorMinus = 0;
+    for (let i = 0; i < texto.length; i++) {
+        let textoNuevo = texto[i];
+        if (texto[i] == texto[i].toLowerCase()) {
+            contadorMinus ++;
+        } 
+
+    }
+    return contadorMinus - 1
+}

@@ -1,0 +1,27 @@
+// funcion para comparar primer y ultima letra de dos palabras
+function comparoPrincipioYfin(palabra1, palabra2) {
+    palabra1 = palabra1.toLowerCase(); // pasar palabra 1 a minuscula
+    palabra2 = palabra2.toLowerCase(); // pasaar palabra 2 a minuscula
+
+
+    let comparacion = " ";
+
+    for (let i = 0; i < palabra1.length; i++) { // quedarme con los valor 0 y length -1
+        let palabra1nueva = palabra1[0] + palabra1[palabra1.length - 1]; // pararme en la palabra 1 y recorrela 
+
+
+        for (let j = 0; j < palabra2.length; j++) { // pararme en palabra2 y recorrerla
+
+            let palabra2nueva = palabra2[0] + palabra2[palabra2.length - 1]; // quedarme con los valor o y lenght - 1
+
+
+            if (palabra2nueva == palabra1nueva) { //comparar si son iguales o no los resultados obtenidos
+                comparacion = "las palabras empiezan y terminan con las mismas letras"
+            } else {
+                comparacion = "las palabras NO empiezan o no terminan con la misma letra"
+            }
+        }
+    }
+    return comparacion
+
+}

@@ -1,0 +1,17 @@
+// funcion para contar una letra determinada
+function contarLetra(letra, texto) {
+
+    letra = letra.toLowerCase();
+    texto = texto.toLowerCase();
+    let sumaLetra = 0;
+    let cantidadDeTexto = texto.length - 1;
+
+    for (let jz = cantidadDeTexto; jz >= 0; jz--) {
+        let textoActual = texto[jz];
+        if (textoActual == letra) {
+            sumaLetra++;
+        }
+
+    }
+    return sumaLetra
+}

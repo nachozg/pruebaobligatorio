@@ -1,0 +1,12 @@
+// funcion para devolver textoalreves
+function leerTextoAlReves(texto) {
+
+    let cantidadDeCaracteres = texto.length;
+    let palabraAlReves = " ";
+
+    for (let i = cantidadDeCaracteres - 1; i >= 0; i--) {
+        palabraAlReves += texto[i];
+
+    }
+    return palabraAlReves
+}

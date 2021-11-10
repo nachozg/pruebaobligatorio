@@ -1,0 +1,25 @@
+// funcion para sustituir letra indicada por asterisco
+function sustituirPorAsterisco(letra, texto) {
+
+    letra = letra.toLowerCase(); // paso letra a minuscula
+
+    texto = texto.toLowerCase(); // paso texto a minuscula
+    let nuevoTexto = " "; // variable para recibir texto
+    let iz = texto.length; // cantidad de letras
+
+    for (let i = 0; i < iz; i++) { //me paro entexto //recorro texto
+
+
+
+        if (texto[i] == letra) { // condicion si letra es igual al recorrido de i
+
+            nuevoTexto += "*"; //  cambio letra por rosquete
+
+        } else {
+            nuevoTexto += texto[i];
+        }
+
+    }
+
+    return nuevoTexto
+}

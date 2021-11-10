@@ -1,0 +1,15 @@
+// funcion para eliminar espacios
+function eliminarEspaciosEnBlanco(texto) {
+    let textoSinEspacios = " "; // acumulador de nuevo texto
+
+    for (let i = 0; i < texto.length; i++) { // me paro en array 0 y recorro
+
+        if (texto[i] == " ") { // condicional para espacio que no quiero acumular
+            textoSinEspacios
+        } else {
+            textoSinEspacios += texto[i]; // acumulo letras sin espacio
+        }
+
+    }
+    return textoSinEspacios
+}

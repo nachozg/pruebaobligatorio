@@ -1,0 +1,11 @@
+// funcion para contar mayusculas
+function cuentaMayusculas(texto) {
+    contadorMayus = 0;
+    for (let i = 0; i < texto.length; i++) {
+        let textoNuevo = texto[i];
+        if (texto[i] == texto[i].toUpperCase()) {
+            contadorMayus ++;
+        } 
+
+    }
+    return contadorMayus - 1

@@ -1,0 +1,17 @@
+// function para contar palabras
+function palabras(texto) {
+
+    let encuentraPalabra = texto.length - 1; //cantidad de letras
+    let cuentaPalabra = 0; // contador de palabras
+    let j = encuentraPalabra; //cantidad de letras para el for innecesario?
+
+    for (let z = 0; z < j; z++) {
+        let textoActual = texto[z];
+        if ((textoActual == " ")) {
+            cuentaPalabra++;
+        }
+    }
+    return (cuentaPalabra + 1)
+
+
+}
